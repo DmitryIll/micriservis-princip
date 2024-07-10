@@ -63,5 +63,7 @@ def validate():
         return 'Invalid token. Please log in again.'
 
 if __name__ == '__main__':
-    port = int(getenv('PORT') or '8080')
+    port = int(getenv('PORT') or '3000')
     server.run(host='0.0.0.0', port=port)
+
+        # port = int(getenv('PORT') or '8080') - видимо не корректно было.
